@@ -1,0 +1,36 @@
+
+.content_middle {
+    width: 60%;
+    height: 600px;
+    background-color: red;
+    display: inline-block;
+    box-shadow:2px 0 0 red;
+    overflow: hidden;
+}
+
+.content_side {
+    width: 20%;
+    height: 600px;
+    background-color: green;
+    display: inline-block;
+    box-shadow: -3px 0 0 green ;
+    overflow: hidden;
+}
+
+
+.content {
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.top a {
+    display: inline-block;
+    float: right;
+}
+
+.top h1 {
+    display: inline-block;
+}
