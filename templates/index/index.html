@@ -1,18 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'index/base.html' %}
+{% load static %}
 
 {% block title %}
-    真香微博
+    真香代码
 {% endblock %}
 
 {% block top %}
-    <h1>真香微博</h1>
-    <a href="{{ url_for("user_bp.to_login") }}"></a>
+    <h1>真香代码</h1>
+{#    <a href="{{ url_for("user_bp.to_login") }}"></a>#}
 {% endblock %}
 
 {% block nav %}
     <a href="">首页</a>
-    <a class="to_my_blog">我的微博</a>
-{#    <a href="{{ url_for("blog_bp.to_my_blog") }}">我的微博</a>#}
+    <a class="to_my_blog">疑难解答</a>
+    <a href="">练习题库</a>
+
 {% endblock %}
 
 {% block content %}
@@ -27,10 +29,10 @@
     <small>本网站由本人开发,网站内容由用户共享,如有什么反馈或建议,请点击<a>此反馈入口</a>,或者联系微信zzx111zzx111或发送邮件至761840384@qq.com,感谢您的使用</small>
 {% endblock %}
 {% block css %}
-    {{ super() }}
+    {{ block.super }}
     <link rel="stylesheet" href="/static/index/css/index.css">
 {% endblock %}
 {% block js %}
-    {{ super() }}
-    <script src="/static/index/js/detect_login_status.js"></script>
+    {{ block.super }}
+{#    <script src="/static/index/js/detect_login_status.js"></script>#}
 {% endblock %}
